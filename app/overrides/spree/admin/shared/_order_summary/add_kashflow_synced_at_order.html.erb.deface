@@ -1,0 +1,11 @@
+<!-- insert_bottom 'tbody.additional-info' -->
+<% if @order.completed? %>
+  <tr>
+    <td><strong><%= Spree.t(:synced_kashflow_at) %></strong></td>
+    <td><%= pretty_time(@order.kashflow_synced_at) rescue nil %></td>
+  </tr>
+  <tr>
+    <td><strong><%= Spree.t(:kashflow_number) %></strong></td>
+    <td><%= @order.kashflow_number %></td>
+  </tr>
+<% end %>

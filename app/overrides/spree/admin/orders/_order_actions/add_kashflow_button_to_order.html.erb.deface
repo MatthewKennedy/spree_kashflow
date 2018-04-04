@@ -1,0 +1,8 @@
+<!-- insert_before "erb[silent]:contains('if can?(:resend, order)')" -->
+<%= button_link_to Spree.t(:sync_kashflow),
+          sync_kashflow_admin_order_url(order),
+          method: :post,
+          icon: 'cloud-upload',
+          disable_with: "Syncing",
+          data: (order.kashflow_synced_at.present? ? { confirm: Spree.t(:order_already_synced_with_kashflow)} : nil )
+    %>

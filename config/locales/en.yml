@@ -1,0 +1,12 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See https://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+en:
+  spree:
+    currency_converted_from_to: "Converted from %{from} to %{to}"
+    kashflow_customer_reference: "Spree Order %{number}"
+    kashflow_number: "Kashflow Invoice Number"
+    order_already_synced_with_kashflow: Order already synced, Are you sure?
+    order_syncing_with_kashflow: Syncing with Kashflow
+    synced_kashflow_at: Synced with Kashflow at
+    sync_kashflow: Send to KashFlow
