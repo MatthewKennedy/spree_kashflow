@@ -16,7 +16,7 @@ module Spree
         address3: bill_address.city,
         address4: bill_address.state.to_s,
         country_name: bill_address.country.to_s,
-        country_code: bill_address.country.iso,
+        country_code: bill_address.country.iso_name,
         postcode: bill_address.zipcode
       }
     end
@@ -30,7 +30,7 @@ module Spree
         line4: ship_address.state.to_s,
         postcode: ship_address.zipcode,
         country_name: ship_address.country.to_s,
-        country_code: ship_address.country.iso
+        country_code: ship_address.country.iso_name
       }
     end
 
